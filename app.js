@@ -95,7 +95,7 @@ const T = {
     ],
   },
   fr: {
-    appTitle: "Soucis d'un Predicateur",
+    appTitle: "Soucis d\'un Predicateur",
     splashSub: "Les preoccupations d'al-Ghazali sur la da'wa et la Oumma",
     splashHint: 'appuyez pour passer',
     sacredRef: 'Sourate Al-Imran 3:104',
@@ -108,7 +108,7 @@ const T = {
     quizTitle: 'Que Feriez-Vous ?',
     quizDesc: "Scenarios reels de da'wa — choisissez ce que vous feriez vraiment",
     reflectionTitle: 'Reflexion Quotidienne',
-    reflectionDesc: "Le journal d'un predicateur — reflexions et enseignements du coeur du livre",
+    reflectionDesc: "Le journal d\'un predicateur — reflexions et enseignements du coeur du livre",
     helpTitle: '❓ Aide',
     duaPanelTitle: '🤲 Duas du Predicateur',
     resetBtn: 'Reinitialiser',
@@ -133,7 +133,7 @@ const T = {
     lifelineHint: 'Indice',
     lifelineVerse: 'Verset',
     splashFeatures: [
-      "20 questions d'un predicateur soucieux",
+      "20 questions d\'un predicateur soucieux",
       'Scenarios interactifs : Que feriez-vous ?',
       'Reflexions quotidiennes avec suivi',
       "Points d'experience et badges"
@@ -373,18 +373,18 @@ const QUIZ = [
 
 // ═══════════════ DAILY REFLECTIONS ═══════════════
 const REFLECTIONS = [
-  {emoji:'🌅',ar:{text:'الداعية الحقيقي لا يعظ الناس من برج عاجي، بل يشاركهم همومهم ويعيش بينهم.',source:'هموم داعية'},en:{text:'A true preacher doesn\'t preach from an ivory tower but shares people\'s concerns and lives among them.',source:'Concerns of a Preacher'},fr:{text:'Un vrai predicateur ne preche pas depuis une tour d\'ivoire mais partage les soucis des gens.',source:"Soucis d'un Predicateur"}},
-  {emoji:'⚖️',ar:{text:'الخلاف في الفروع طبيعي، لكن التعصب له مرض. اتسع كما اتسع السلف.',source:'هموم داعية'},en:{text:'Disagreement on secondary matters is natural, but fanaticism about it is a disease.',source:'Concerns of a Preacher'},fr:{text:'Le desaccord sur les questions secondaires est naturel, mais le fanatisme est une maladie.',source:"Soucis d'un Predicateur"}},
-  {emoji:'📖',ar:{text:'القرآن كتاب حياة لا كتاب طقوس. تدبّره واعمل به.',source:'هموم داعية'},en:{text:'The Quran is a book of life, not rituals. Contemplate it and act upon it.',source:'Concerns of a Preacher'},fr:{text:'Le Coran est un livre de vie, pas de rituels. Meditez-le et agissez.',source:"Soucis d'un Predicateur"}},
-  {emoji:'🕊️',ar:{text:'الكلمة الطيبة صدقة. والدعوة بالرحمة أقوى من ألف خطبة بالترهيب.',source:'هموم داعية'},en:{text:'A kind word is charity. Dawah with mercy is stronger than a thousand threatening sermons.',source:'Concerns of a Preacher'},fr:{text:'Une bonne parole est une aumone. La da\'wa avec misericorde est plus forte que mille sermons menacants.',source:"Soucis d'un Predicateur"}},
-  {emoji:'👩',ar:{text:'المرأة شريكة الرجل في بناء الأمة. من ظلمها باسم الإسلام فقد افترى على الله.',source:'هموم داعية'},en:{text:'Women are partners with men in building the Ummah. Those who oppress them in the name of Islam fabricate lies about God.',source:'Concerns of a Preacher'},fr:{text:'Les femmes sont partenaires des hommes dans la construction de la Oumma. Ceux qui les oppriment au nom de l\'Islam mentent sur Dieu.',source:"Soucis d'un Predicateur"}},
-  {emoji:'🧠',ar:{text:'العقل المسلم يجب أن يكون حياً متجدداً. الجمود ليس من الإسلام.',source:'هموم داعية'},en:{text:'The Muslim mind must be alive and renewing. Stagnation is not from Islam.',source:'Concerns of a Preacher'},fr:{text:'L\'esprit musulman doit etre vivant et en renouvellement. La stagnation n\'est pas de l\'Islam.',source:"Soucis d'un Predicateur"}},
-  {emoji:'🤝',ar:{text:'الوحدة تبدأ من القلوب لا من الأنظمة. ابدأ بما يجمع لا بما يفرق.',source:'هموم داعية'},en:{text:'Unity starts from hearts, not systems. Start with what unites, not what divides.',source:'Concerns of a Preacher'},fr:{text:'L\'unite commence par les coeurs, pas par les systemes. Commencez par ce qui unit.',source:"Soucis d'un Predicateur"}},
-  {emoji:'💡',ar:{text:'استقلال الداعية شرط لصدق دعوته. لا تبع كلمتك لأحد.',source:'هموم داعية'},en:{text:'A preacher\'s independence is essential for their sincerity. Never sell your word.',source:'Concerns of a Preacher'},fr:{text:'L\'independance du predicateur est essentielle a sa sincerite. Ne vendez jamais votre parole.',source:"Soucis d'un Predicateur"}},
-  {emoji:'🌍',ar:{text:'الأمة التي لا تتفاعل مع العالم تموت. الانفتاح ليس ذوباناً بل قوة.',source:'هموم داعية'},en:{text:'A nation that doesn\'t interact with the world dies. Openness is not dissolution but strength.',source:'Concerns of a Preacher'},fr:{text:'Une nation qui n\'interagit pas avec le monde meurt. L\'ouverture n\'est pas une dissolution mais une force.',source:"Soucis d'un Predicateur"}},
-  {emoji:'🔬',ar:{text:'لا تعارض بين العلم والإيمان. كل اكتشاف علمي يزيدك قرباً من الله.',source:'هموم داعية'},en:{text:'There is no conflict between science and faith. Every discovery brings you closer to God.',source:'Concerns of a Preacher'},fr:{text:'Il n\'y a pas de conflit entre science et foi. Chaque decouverte vous rapproche de Dieu.',source:"Soucis d'un Predicateur"}},
-  {emoji:'🏛️',ar:{text:'التراث كنز يحتاج تنقية لا تقديس ولا هدم.',source:'هموم داعية'},en:{text:'Heritage is a treasure that needs purification, not sanctification or demolition.',source:'Concerns of a Preacher'},fr:{text:'Le patrimoine est un tresor qui a besoin de purification, pas de sanctification ni de demolition.',source:"Soucis d'un Predicateur"}},
-  {emoji:'🌅',ar:{text:'لا تستسلم للإحباط. كل عمل صالح لبنة في بناء المستقبل.',source:'هموم داعية'},en:{text:'Don\'t surrender to despair. Every good deed is a brick in building the future.',source:'Concerns of a Preacher'},fr:{text:'Ne cedez pas au desespoir. Chaque bonne action est une brique pour construire le futur.',source:"Soucis d'un Predicateur"}}
+  {emoji:'🌅',ar:{text:'الداعية الحقيقي لا يعظ الناس من برج عاجي، بل يشاركهم همومهم ويعيش بينهم.',source:'هموم داعية'},en:{text:'A true preacher doesn\'t preach from an ivory tower but shares people\'s concerns and lives among them.',source:'Concerns of a Preacher'},fr:{text:'Un vrai predicateur ne preche pas depuis une tour d\'ivoire mais partage les soucis des gens.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'⚖️',ar:{text:'الخلاف في الفروع طبيعي، لكن التعصب له مرض. اتسع كما اتسع السلف.',source:'هموم داعية'},en:{text:'Disagreement on secondary matters is natural, but fanaticism about it is a disease.',source:'Concerns of a Preacher'},fr:{text:'Le desaccord sur les questions secondaires est naturel, mais le fanatisme est une maladie.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'📖',ar:{text:'القرآن كتاب حياة لا كتاب طقوس. تدبّره واعمل به.',source:'هموم داعية'},en:{text:'The Quran is a book of life, not rituals. Contemplate it and act upon it.',source:'Concerns of a Preacher'},fr:{text:'Le Coran est un livre de vie, pas de rituels. Meditez-le et agissez.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'🕊️',ar:{text:'الكلمة الطيبة صدقة. والدعوة بالرحمة أقوى من ألف خطبة بالترهيب.',source:'هموم داعية'},en:{text:'A kind word is charity. Dawah with mercy is stronger than a thousand threatening sermons.',source:'Concerns of a Preacher'},fr:{text:'Une bonne parole est une aumone. La da\'wa avec misericorde est plus forte que mille sermons menacants.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'👩',ar:{text:'المرأة شريكة الرجل في بناء الأمة. من ظلمها باسم الإسلام فقد افترى على الله.',source:'هموم داعية'},en:{text:'Women are partners with men in building the Ummah. Those who oppress them in the name of Islam fabricate lies about God.',source:'Concerns of a Preacher'},fr:{text:'Les femmes sont partenaires des hommes dans la construction de la Oumma. Ceux qui les oppriment au nom de l\'Islam mentent sur Dieu.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'🧠',ar:{text:'العقل المسلم يجب أن يكون حياً متجدداً. الجمود ليس من الإسلام.',source:'هموم داعية'},en:{text:'The Muslim mind must be alive and renewing. Stagnation is not from Islam.',source:'Concerns of a Preacher'},fr:{text:'L\'esprit musulman doit etre vivant et en renouvellement. La stagnation n\'est pas de l\'Islam.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'🤝',ar:{text:'الوحدة تبدأ من القلوب لا من الأنظمة. ابدأ بما يجمع لا بما يفرق.',source:'هموم داعية'},en:{text:'Unity starts from hearts, not systems. Start with what unites, not what divides.',source:'Concerns of a Preacher'},fr:{text:'L\'unite commence par les coeurs, pas par les systemes. Commencez par ce qui unit.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'💡',ar:{text:'استقلال الداعية شرط لصدق دعوته. لا تبع كلمتك لأحد.',source:'هموم داعية'},en:{text:'A preacher\'s independence is essential for their sincerity. Never sell your word.',source:'Concerns of a Preacher'},fr:{text:'L\'independance du predicateur est essentielle a sa sincerite. Ne vendez jamais votre parole.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'🌍',ar:{text:'الأمة التي لا تتفاعل مع العالم تموت. الانفتاح ليس ذوباناً بل قوة.',source:'هموم داعية'},en:{text:'A nation that doesn\'t interact with the world dies. Openness is not dissolution but strength.',source:'Concerns of a Preacher'},fr:{text:'Une nation qui n\'interagit pas avec le monde meurt. L\'ouverture n\'est pas une dissolution mais une force.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'🔬',ar:{text:'لا تعارض بين العلم والإيمان. كل اكتشاف علمي يزيدك قرباً من الله.',source:'هموم داعية'},en:{text:'There is no conflict between science and faith. Every discovery brings you closer to God.',source:'Concerns of a Preacher'},fr:{text:'Il n\'y a pas de conflit entre science et foi. Chaque decouverte vous rapproche de Dieu.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'🏛️',ar:{text:'التراث كنز يحتاج تنقية لا تقديس ولا هدم.',source:'هموم داعية'},en:{text:'Heritage is a treasure that needs purification, not sanctification or demolition.',source:'Concerns of a Preacher'},fr:{text:'Le patrimoine est un tresor qui a besoin de purification, pas de sanctification ni de demolition.',source:"Soucis d\'un Predicateur"}},
+  {emoji:'🌅',ar:{text:'لا تستسلم للإحباط. كل عمل صالح لبنة في بناء المستقبل.',source:'هموم داعية'},en:{text:'Don\'t surrender to despair. Every good deed is a brick in building the future.',source:'Concerns of a Preacher'},fr:{text:'Ne cedez pas au desespoir. Chaque bonne action est une brique pour construire le futur.',source:"Soucis d\'un Predicateur"}}
 ];
 
 // ═══════════════ DUAS ═══════════════
