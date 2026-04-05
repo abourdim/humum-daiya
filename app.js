@@ -487,7 +487,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function initSplash() {
   let count = 5;
   const el = document.getElementById('splashCount');
+  if (!el) return;
   const featuresEl = document.getElementById('splashFeatures');
+  if (!featuresEl) return;
   if (featuresEl) {
     featuresEl.innerHTML = T[lang].splashFeatures.map((f, i) =>
       `<div class="splash-feature" style="animation-delay:${0.3 + i * 0.3}s">${f}</div>`
@@ -501,6 +503,7 @@ function initSplash() {
 }
 function dismissSplash() {
   const s = document.getElementById('splash');
+  if (!s) return;
   if (s) { s.classList.add('hidden'); setTimeout(() => s.style.display = 'none', 500); }
   playSound('click');
 }
@@ -526,6 +529,7 @@ function setLang(l) {
   set('helpTitle', t.helpTitle); set('duaPanelTitle', t.duaPanelTitle);
   renderHome(); renderConcerns(); renderSolutions(); renderQuiz(); renderReflection(); renderAbout(); renderHelp(); renderDuas(); renderXPBar();
   const featuresEl = document.getElementById('splashFeatures');
+  if (!featuresEl) return;
   if (featuresEl) {
     featuresEl.innerHTML = T[l].splashFeatures.map((f, i) =>
       `<div class="splash-feature" style="animation-delay:${0.3 + i * 0.3}s">${f}</div>`
@@ -540,6 +544,7 @@ function setTheme(t) {
   localStorage.setItem('hd-theme', t);
   const idx = themes.indexOf(t);
   const el = document.getElementById('themeIcon');
+  if (!el) return;
   if (el) el.textContent = themeIcons[idx];
 }
 function cycleTheme() {
@@ -708,6 +713,7 @@ function renderQuizQuestion() {
   const t = T[lang];
   const container = document.getElementById('quizContainer');
   const result = document.getElementById('quizResult');
+  if (!result) return;
   result.classList.add('hidden');
 
   if (quizIndex >= QUIZ.length) {
@@ -786,6 +792,7 @@ function useLifeline(type) {
   } else if (type === 'hint' && !quizUsedLifelines.hint) {
     quizUsedLifelines.hint = true;
     const hintEl = document.getElementById('quizHint');
+    if (!hintEl) return;
     if (hintEl) { hintEl.textContent = '💡 ' + d.hint; hintEl.classList.remove('hidden'); }
     document.querySelectorAll('.lifeline-btn')[1].classList.add('used');
     document.querySelectorAll('.lifeline-btn')[1].disabled = true;
@@ -812,6 +819,7 @@ function selectScenarioAnswer(idx) {
   quizTotal++;
   // Show hint after answering
   const hintEl = document.getElementById('quizHint');
+  if (!hintEl) return;
   if (hintEl && hintEl.classList.contains('hidden')) {
     hintEl.textContent = '💡 ' + d.hint;
     hintEl.classList.remove('hidden');
@@ -835,9 +843,11 @@ function renderReflection() {
   const streak = getStreak();
   const streakHTML = streak > 0 ? `<div class="streak-badge">🔥 ${streak} ${T[lang].streakMsg}</div>` : '';
   const streakEl = document.getElementById('streakBadge');
+  if (!streakEl) return;
   if (streakEl) streakEl.innerHTML = streakHTML;
 
   const container = document.getElementById('reflectionContainer');
+  if (!container) return;
   container.innerHTML = REFLECTIONS.map((r, i) => {
     const d = r[lang];
     const isDone = refState.done.includes(i);
@@ -881,7 +891,9 @@ function updateReflectionProgress(rs) {
   const total = REFLECTIONS.length;
   const pct = total > 0 ? (done / total * 100) : 0;
   const fill = document.getElementById('reflectionFill');
+  if (!fill) return;
   const txt = document.getElementById('reflectionText');
+  if (!txt) return;
   if (fill) fill.style.width = pct + '%';
   if (txt) txt.textContent = `${done}/${total}`;
 }
@@ -1044,13 +1056,16 @@ function initKeyboardNav() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       const helpPanel = document.getElementById('helpPanel');
+      if (!helpPanel) return;
       if (!helpPanel.classList.contains('hidden')) { toggleHelp(); return; }
       const duaPanel = document.getElementById('duaPanel');
+      if (!duaPanel) return;
       if (!duaPanel.classList.contains('hidden')) { toggleDuaPanel(); return; }
       document.querySelectorAll('.concern-card.open').forEach(c => c.classList.remove('open'));
     }
     if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
       const concernsPanel = document.getElementById('panel-concerns');
+      if (!concernsPanel) return;
       if (!concernsPanel || !concernsPanel.classList.contains('active')) return;
       if (document.activeElement && document.activeElement.id === 'concernsSearch') return;
       e.preventDefault();
@@ -1077,7 +1092,9 @@ function toggleCard(id) {
 
 function showToast(msg) {
   const toast = document.getElementById('toast');
+  if (!toast) return;
   const msgEl = document.getElementById('toastMsg');
+  if (!msgEl) return;
   if (!toast || !msgEl) return;
   msgEl.textContent = msg;
   toast.style.display = 'block';
@@ -1087,11 +1104,13 @@ function showToast(msg) {
 
 function toggleHelp() {
   const p = document.getElementById('helpPanel');
+  if (!p) return;
   if (p) p.classList.toggle('hidden');
 }
 
 function toggleDuaPanel() {
   const p = document.getElementById('duaPanel');
+  if (!p) return;
   if (p) p.classList.toggle('hidden');
 }
 
@@ -1114,5 +1133,6 @@ function playSound(type) {
 // ═══════════════ SCROLL TO TOP ═══════════════
 window.addEventListener('scroll', () => {
   const btn = document.getElementById('scrollTop');
+  if (!btn) return;
   if (btn) btn.classList.toggle('visible', window.scrollY > 300);
 });
