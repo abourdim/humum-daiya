@@ -570,7 +570,7 @@ function renderHome() {
   const dayIdx = new Date().getDate() % REFLECTIONS.length;
   const r = REFLECTIONS[dayIdx];
   const rd = r[lang];
-  document.getElementById('dailyCard').innerHTML = `
+  (document.getElementById('dailyCard')||{}).innerHTML= `
     <div class="daily-label">${t.dailyLabel}</div>
     <div class="daily-title">${r.emoji} ${rd.text}</div>
     <div class="daily-body">${rd.source}</div>
@@ -583,7 +583,7 @@ function renderHome() {
     {icon:'🕌',tab:'reflection',title:t.tabReflection,desc:lang==='ar'?'تأملات يومية':lang==='fr'?'Reflexions quotidiennes':'Daily reflections'},
     {icon:'📖',tab:'about',title:t.tabAbout,desc:lang==='ar'?'عن الكتاب والمؤلف':lang==='fr'?'Le livre et l\'auteur':'Book & author'},
   ];
-  document.getElementById('homeGrid').innerHTML = sections.map(s => `
+  (document.getElementById('homeGrid')||{}).innerHTML= sections.map(s => `
     <div class="home-card" onclick="document.querySelector('[data-tab=${s.tab}]').click()">
       <span class="hc-icon">${s.icon}</span>
       <div class="hc-title">${s.title}</div>
@@ -624,7 +624,7 @@ function renderConcerns() {
       </div>
     </div>`;
   }).join('');
-  document.getElementById('concernsContainer').innerHTML = searchBar + cards;
+  (document.getElementById('concernsContainer')||{}).innerHTML= searchBar + cards;
 }
 
 function trackCardRead(id) {
@@ -666,7 +666,7 @@ async function shareConcern(idx) {
 // ═══════════════ RENDER: SOLUTIONS ═══════════════
 function renderSolutions() {
   const t = T[lang];
-  document.getElementById('solutionsContainer').innerHTML = SOLUTIONS.map(s => {
+  (document.getElementById('solutionsContainer')||{}).innerHTML= SOLUTIONS.map(s => {
     const d = s[lang];
     return `
     <div class="solution-card scroll-reveal">
@@ -963,7 +963,7 @@ function renderAbout() {
     }
   };
   const a = about[lang];
-  document.getElementById('aboutContainer').innerHTML = `
+  (document.getElementById('aboutContainer')||{}).innerHTML= `
     <div class="about-disclaimer">
       <div class="about-disclaimer-title">${a.disclaimerTitle}</div>
       <p>${a.disclaimer}</p>
@@ -1015,14 +1015,14 @@ function renderHelp() {
       {title:'🤝 Contribuer',body:'GitHub : github.com/abourdim/humum-daiya'},
     ]
   };
-  document.getElementById('helpBody').innerHTML = help[lang].map(h => `
+  (document.getElementById('helpBody')||{}).innerHTML= help[lang].map(h => `
     <div class="help-item"><div class="help-item-title">${h.title}</div><div>${h.body}</div></div>
   `).join('');
 }
 
 // ═══════════════ RENDER: DUAS ═══════════════
 function renderDuas() {
-  document.getElementById('duaPanelContent').innerHTML = DUAS.map(d => {
+  (document.getElementById('duaPanelContent')||{}).innerHTML= DUAS.map(d => {
     const dd = d[lang];
     return `<div class="dua-item"><div class="dua-item-label">${dd.label}</div><div class="dua-item-ar">${dd.text}</div><div class="dua-item-tr">${dd.tr}</div></div>`;
   }).join('');
