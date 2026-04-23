@@ -706,6 +706,7 @@ function renderQuiz() {
 function renderQuizQuestion() {
   const t = T[lang];
   const container = document.getElementById('quizContainer');
+  if (!container) return;
   const result = document.getElementById('quizResult');
   result.classList.add('hidden');
 
@@ -837,6 +838,7 @@ function renderReflection() {
   if (streakEl) streakEl.innerHTML = streakHTML;
 
   const container = document.getElementById('reflectionContainer');
+  if (!container) return;
   container.innerHTML = REFLECTIONS.map((r, i) => {
     const d = r[lang];
     const isDone = refState.done.includes(i);
